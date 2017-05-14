@@ -5,6 +5,7 @@ class Article < ActiveRecord::
 
   def tag_list
     tags.join(", ")
+  end
 
   def tag_list
     self.tags.collect do |tag|
